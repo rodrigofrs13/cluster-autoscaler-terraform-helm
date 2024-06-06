@@ -83,19 +83,19 @@ module "eks" {
       instance_types = ["t3a.small"]
 
       min_size     = 1
-      max_size     = 5
+      max_size     = 10
       desired_size = 1
     }
 
-    two = {
-      name = "node-group-2"
+    # two = {
+    #   name = "node-group-2"
 
-      instance_types = ["t3a.small"]
+    #   instance_types = ["t3a.small"]
 
-      min_size     = 1
-      max_size     = 5
-      desired_size = 1
-    }
+    #   min_size     = 1
+    #   max_size     = 5
+    #   desired_size = 1
+    # }
   }
 }
 
