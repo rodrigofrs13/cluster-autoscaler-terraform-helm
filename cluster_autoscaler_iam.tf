@@ -35,13 +35,13 @@
 #       {
 #         Effect = "Allow",
 #         Principal = {
-#           Federated = "arn:aws:iam::246732148991:oidc-provider/oidc.eks.us-east-1.amazonaws.com/id/7245F203A29B4E5F8B0282F829F4FBDC"
+#           Federated = "arn:aws:iam::246732148991:oidc-provider/oidc.eks.us-east-1.amazonaws.com/id/ADC14E5FBE2044B30A610EAE9E8ABBB1"
 #          },
 #         Action = "sts:AssumeRoleWithWebIdentity",
 #         Condition = {
 #           StringEquals = {
-#             "oidc.eks.${var.region}.amazonaws.com/id/7245F203A29B4E5F8B0282F829F4FBDC:aud" = "sts.amazonaws.com"
-#             "oidc.eks.${var.region}.amazonaws.com/id/7245F203A29B4E5F8B0282F829F4FBDC:sub" = "system:serviceaccount:kube-system:cluster-autoscaler"
+#             "oidc.eks.${var.region}.amazonaws.com/id/ADC14E5FBE2044B30A610EAE9E8ABBB1:aud" = "sts.amazonaws.com"
+#             "oidc.eks.${var.region}.amazonaws.com/id/ADC14E5FBE2044B30A610EAE9E8ABBB1:sub" = "system:serviceaccount:kube-system:cluster-autoscaler"
 #           }
 #         }
 #       },
