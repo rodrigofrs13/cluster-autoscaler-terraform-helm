@@ -1,5 +1,5 @@
 ## Dados do cluster
-cluster_name                            = "cluster-workshop"
+cluster_name                            = "workshop-autoscaler"
 eks_version                             = "1.30"
 region                                  = "us-east-1"
 cluster_endpoint_public_access_cidrs    = ["0.0.0.0/0"]
