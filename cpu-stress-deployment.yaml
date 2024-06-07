@@ -1,23 +1,23 @@
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: cpu-stress
-spec:
-  replicas: 5
-  selector:
-    matchLabels:
-      app: cpu-stress
-  template:
-    metadata:
-      labels:
-        app: cpu-stress
-    spec:
-      containers:
-      - name: cpu-stress
-        image: vish/stress
-        resources:
-          requests:
-            cpu: "1"
-        args:
-        - -cpus
-        - "1"
+# apiVersion: apps/v1
+# kind: Deployment
+# metadata:
+#   name: cpu-stress
+# spec:
+#   replicas: 5
+#   selector:
+#     matchLabels:
+#       app: cpu-stress
+#   template:
+#     metadata:
+#       labels:
+#         app: cpu-stress
+#     spec:
+#       containers:
+#       - name: cpu-stress
+#         image: vish/stress
+#         resources:
+#           requests:
+#             cpu: "1"
+#         args:
+#         - -cpus
+#         - "1"
